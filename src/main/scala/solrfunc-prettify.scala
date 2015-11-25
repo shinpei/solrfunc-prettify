@@ -1,3 +1,5 @@
+package com.github.shinpei
+
 import scala.util.parsing.combinator._
 import java.io.{FileReader, InputStreamReader, BufferedReader}
 case class SolrFloat (moreThanOne: String, lessThanOne : String)
