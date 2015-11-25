@@ -15,15 +15,16 @@ After minutes of waiting for compiling, you will get jar.
 ```
 $ cd target/scala-2.XX // XX is a version, and depends on your environment
 $ java -jar solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
-Urquell% java -jar target/scala-2.10/solrfunc-prettify-assembly-0.1-SNAPSHOT.jar
+Urquell% java -jar target/scala-2.10/solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
 Print Solr function more pretty way
 ...
 ```
+
 If you get usage explanation like above, they it's working fine.
 
 ### Example
 ```
-$ echo "div(def(weight, 63), product(def(tall, 170),def(tall, 170)))" | scala SolrFuncPrettify -
+$ echo "div(def(weight, 63), product(def(tall, 170),def(tall, 170)))" | java -jar target/scala-2.10/solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
 div(
   def(
     weight,
