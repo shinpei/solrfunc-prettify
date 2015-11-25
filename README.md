@@ -15,7 +15,6 @@ After minutes of waiting for compiling, you will get jar.
 ```
 $ cd target/scala-2.XX // XX is a version, and depends on your environment
 $ java -jar solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
-Urquell% java -jar target/scala-2.10/solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
 Print Solr function more pretty way
 ...
 ```
