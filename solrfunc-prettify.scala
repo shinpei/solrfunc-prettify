@@ -98,7 +98,7 @@ object SolrFuncPrettify {
       str = str.substring(0, str.length- 2)
       str += "\n"
       str += INDENT * level
-      str += ")\n"
+      str += ")"
       return str
     }
 
