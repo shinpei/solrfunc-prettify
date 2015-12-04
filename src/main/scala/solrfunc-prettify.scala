@@ -116,10 +116,10 @@ Usage:
 
 The arguments are:
 
-      -          :  Take standard input as an input
-        e.g.) cat "add(123)" | scala SolrFuncPrettify - 
-      (filename) : Take given string as a file name to open as an input
-        e.g.) scala SolrFuncPrettify solrfuncs.txt
+       - :  Take standard input as an input
+        e.g.) cat "add(123)" | java -jar solrfunc-prettify.jar - 
+      (file) : Take given string as a file name to open as an input
+        e.g.) java -jar solrfunc-prettify.jar solrfuncs.txt
 """)
       return
     }
@@ -128,15 +128,7 @@ The arguments are:
     val parser = DebugParser
     val msg = prettify(parser.parse(reader), 0)
     println(msg)
-    /*parser.parse("hoge")
-    parser.parse("12")
-    parser.parse("12.34")
-    parser.parse("func(hoge)")
-    parser.parse("func(123)")
-    println(SolrFuncParser("func(123.4)"))
-    println(SolrFuncParser("func(0, 0)"))
-*/
-    //println(SolrFuncParser("bye and func(func(2))")
+
   }
 }
 
