@@ -23,7 +23,7 @@ If you get usage explanation like above, they it's working fine.
 
 ### Example
 ```
-$ echo "div(def(weight, 63), product(def(tall, 170),def(tall, 170)))" | java -jar target/scala-2.10/solrfunc-prettify-assembly-0.1.0-SNAPSHOT.jar
+$ echo "div(def(weight, 63), product(def(tall, 170),def(tall, 170)))" | java -jar solrfunc-prettify.jar -
 div(
   def(
     weight,
