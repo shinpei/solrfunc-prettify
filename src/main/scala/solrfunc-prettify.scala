@@ -92,13 +92,15 @@ object SolrFuncPrettify {
     case (x: SolrFunc) => {
       var str = (INDENT * level)
       str += x.funcname + "(\n"
-      for (arg <- x.args) {
-	str += prettify(arg, level+1)
-	str += ",\n"
-      }
-      // delete last comma and LF
-      str = str.substring(0, str.length- 2)
-      str += "\n"
+      if (x.args.length > 0 ){
+	for (arg <- x.args) {
+	  str += prettify(arg, level+1)
+	  str += ",\n"
+	}
+	// delete last comma and LF
+	str = str.substring(0, str.length- 2)
+	str += "\n"
+      } 
       str += INDENT * level
       str += ")"
       return str
